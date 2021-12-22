@@ -92,14 +92,6 @@ app.post("/compose",function(req,res){
 
   });
 
-
-
-
-
-
-
-  res.redirect("/");
-
 });
 
 

@@ -24,7 +24,6 @@ app.use(express.static("public"));
 mongoose.connect("mongodb+srv://admin-Jafrin:Test123@cluster0.vacef.mongodb.net/blogDB", {useNewUrlParser: true});
 
 
-// my changes
 const postSchema = {
   title : String,
   content : String
@@ -33,9 +32,7 @@ const postSchema = {
 const Post = mongoose.model("Post",postSchema);
 
 
-// (key:value)
-// key is in ejs files
-//values are above
+
 
 app.get("/",function(req,res){
   // my changes
@@ -49,7 +46,7 @@ app.get("/",function(req,res){
 
        });
        });
-   // my changes
+  
 
 });
 
@@ -96,7 +93,6 @@ app.post("/compose",function(req,res){
 
 
 
-// DYNAMIC URL
 app.get("/posts/:postId",function(req,res){
 
   const requestedPostId = req.params.postId;

@@ -1,10 +1,7 @@
 <%- include("partials/header"); -%>
 <h1>Home</h1>
 <p> <%= startingContent %></p>
-
  <% /* %>
-
-
 
  //We could have used this for loop as well
  <%  for(var i=0; i <posts.length ; i++){ %>
@@ -18,15 +15,7 @@
   <%=post.content.substring(0,100)+" ..." %>
   <a class="composing" style="text-decoration: none" href="/posts/<%= post._id %>">Read More</a>
   </p>
-
-
-
-
 <%})%>
 
 <a class="composing" style="text-decoration: none" href="/compose">Compose New Experience!</a>
-
-
-
-
 <%- include("partials/footer"); -%>
